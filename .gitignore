@@ -1,0 +1,8 @@
+*.elc
+*.bak
+*.bakk
+*~
+*.swp
+*.swo
+
+\#*#
