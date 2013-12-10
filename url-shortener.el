@@ -1,12 +1,20 @@
 ;;; url-shortener.el --- shorten long url and expand tinyurl
-;; Time-stamp: <2013-12-10 14:55:27 Tuesday by Yu Yang>
+;; Time-stamp: <2013-12-10 14:59:00 Tuesday by Yu Yang>
 ;;; Author: Yu Yang <yy2012cn@NOSPAM.gmail.com>
 ;;; URL: https://github.com/yuyang0/url-shortener
 ;;; Version: 0.3
 ;;;
 ;;; Commentary:
 ;; Usage:
-;;
+;; this package provides commands to do url shorten and expand:
+;;    M-x goo-url-shorten
+;;    M-x goo-url-expand
+;;    M-x bitly-url-shorten
+;;    M-x bitly-url-expand
+;;    M-x dwz-url-shorten
+;;    M-x dwz-url-expand
+;;    M-x 126am-url-shorten
+;;    M-x 126am-url-expand
 ;;; Code:
 (defgroup bitly nil
   "The bitly URL shortening service."
