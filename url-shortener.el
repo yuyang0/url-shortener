@@ -1,8 +1,8 @@
 ;;; url-shortener.el --- shorten long url and expand tinyurl
-;; Time-stamp: <2013-12-10 01:16:34 Tuesday by Yu Yang>
+;; Time-stamp: <2013-12-10 14:44:46 Tuesday by Yu Yang>
 ;;; Author: Yu Yang <yy2012cn@NOSPAM.gmail.com>
 ;;; URL: https://github.com/yuyang0/url-shortener
-;; Version: 0.01
+;; Version: 0.02
 ;;;
 ;;; Commentary:
 ;; Usage:
