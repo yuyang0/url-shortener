@@ -1,5 +1,5 @@
 ;;; url-shortener.el --- shorten long url and expand tinyurl
-;; Time-stamp: <2013-12-10 14:59:00 Tuesday by Yu Yang>
+;; Time-stamp: <2013-12-10 17:44:20 Tuesday by Yu Yang>
 ;;; Author: Yu Yang <yy2012cn@NOSPAM.gmail.com>
 ;;; URL: https://github.com/yuyang0/url-shortener
 ;;; Version: 0.3
@@ -192,7 +192,7 @@ point with `url--need-insert', otherwith insert the `url-need-insert' to the buf
       (if (equal status-code 0)
           (smart-insert-url-to-buffer longurl tinyurl)
         (error "Error calling dwz.cn: %s"
-               (cdr (assq err_msg resp-json))))))
+               (cdr (assq 'err_msg resp-json))))))
   (my-url-http-post dwz-shorten-api-url `(,(cons "url" long-url)) 'http-callback
                     `(,(current-buffer) dwz-shorten-callback)))
 (defun dwz-expand (short-url)
@@ -203,7 +203,7 @@ point with `url--need-insert', otherwith insert the `url-need-insert' to the buf
       (if (equal status-code 0)
           (smart-insert-url-to-buffer tinyurl longurl)
         (error "Error calling dwz.cn: %s"
-               (cdr (assq err_msg resp-json))))))
+               (cdr (assq 'err_msg resp-json))))))
   (my-url-http-post dwz-expand-api-url `(,(cons "tinyurl" short-url)) 'http-callback
                     `(,(current-buffer) dwz-expand-callback ,short-url)))
 (defun 126am-shorten (long-url)
