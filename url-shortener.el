@@ -78,13 +78,19 @@ Get your personal token here: http://open.weibo.com/apps/new"
 
 (defvar tcn-shorten-api-url "https://api.weibo.com/2/short_url/shorten.json")
 
+(defun url-equal (url1 url2)
+  (if (or (equal url1 url2)
+          (equal url1 (concat url2 "/"))
+          (equal url2 (concat url1 "/")))
+      t
+    nil))
 (defun smart-insert-url-to-buffer (test-url url-need-insert)
   "If url at current point is equal to `test-url', replace the url at current
 point with `url--need-insert', otherwith insert the `url-need-insert' to the buffer"
   (let ((current-point-url (thing-at-point 'url))
         (url-boundaries (bounds-of-thing-at-point 'url)))
     (if url-boundaries
-        (if (equal test-url current-point-url)
+        (if (url-equal test-url current-point-url)
             (progn
               (goto-char (car url-boundaries))
               (delete-region (car url-boundaries) (cdr url-boundaries))
