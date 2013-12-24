@@ -19,7 +19,7 @@ url-shortener.el with <kbd> M-x package-install-from-file </kbd>.
 Configuration
 ------------
 
-If you want use the service provided by bit.ly, you should get an
+If you want to use the service provided by bit.ly, you should get an
 access token from https://bitly.com/a/oauth_apps, then append
 following code to your .emacs
 
