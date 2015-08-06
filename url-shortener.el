@@ -16,6 +16,7 @@
 ;;    M-x 126am-url-shorten
 ;;    M-x 126am-url-expand
 ;;; Code:
+(require 'json)
 (defgroup bitly nil
   "The bitly URL shortening service."
   :prefix "bitly-"
