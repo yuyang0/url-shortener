@@ -1,3 +1,5 @@
+[![MELPA](http://melpa.org/packages/url-shortener-badge.svg)](http://melpa.org/#/url-shortener)
+[![MELPA Stable](http://stable.melpa.org/packages/url-shortener-badge.svg)](http://stable.melpa.org/#/url-shortener)
 Emacs Url Shortener
 =====================
 
