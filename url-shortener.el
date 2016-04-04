@@ -37,14 +37,15 @@ Get your personal token here: https://bitly.com/a/oauth_apps"
 (defvar dwz-expand-api-url "http://dwz.cn/query.php")
 
 (defgroup goo nil
-  "The 126.am URL shortening service."
+  "The goo.gl URL shortening service."
   :prefix "goo-"
   :group 'applications)
 
 (defcustom goo-api-key nil
-  "The Api key for 126.am.
+  "The Api key for goo.gl.
 
-Get your personal token here: http://126.am/apiManage.action"
+Get your personal token here: 
+https://developers.google.com/url-shortener/v1/getting_started#APIKey"
   :type 'string
   :group 'goo)
 
