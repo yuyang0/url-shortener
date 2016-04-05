@@ -44,7 +44,7 @@ Get your personal token here: https://bitly.com/a/oauth_apps"
 (defcustom goo-api-key nil
   "The Api key for goo.gl.
 
-Get your personal token here: 
+Get your personal token here:
 https://developers.google.com/url-shortener/v1/getting_started#APIKey"
   :type 'string
   :group 'goo)
@@ -88,7 +88,7 @@ Get your personal token here: http://open.weibo.com/apps/new"
     nil))
 (defun smart-insert-url-to-buffer (test-url url-need-insert)
   "If url at current point is equal to `test-url', replace the url at current
-point with `url--need-insert', otherwith insert the `url-need-insert' to the buffer"
+point with `url--need-insert', otherwise insert the `url-need-insert' to the buffer"
   (let ((current-point-url (thing-at-point 'url))
         (url-boundaries (bounds-of-thing-at-point 'url)))
     (if url-boundaries
@@ -260,7 +260,7 @@ point with `url--need-insert', otherwith insert the `url-need-insert' to the buf
                       'http-callback
                       `(,(current-buffer) goo-callback) t)))
 (defun goo-expand (short-url)
-  "Return a shortened URL for LONG-URL."
+  "Return a expended URL for tiny url."
   (defun goo-callback (resp-json)
     (let ((longurl (cdr (assq 'longUrl resp-json)))
            (tinyurl (cdr (assq 'id resp-json))))

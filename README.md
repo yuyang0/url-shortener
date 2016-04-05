@@ -29,6 +29,7 @@ following code to your .emacs
 (setq bitly-access-token "your access token")
 ```
 
+if you use goo.gl, you also need an api key, you can get from https://developers.google.com/url-shortener/v1/getting_started#APIKey, then append `(setq goo-api-key "you api key")` to your dotemacas.
 Usage
 ------------
 
