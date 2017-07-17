@@ -30,6 +30,7 @@ following code to your .emacs
 ```
 
 if you use goo.gl, you also need an api key, you can get from https://developers.google.com/url-shortener/v1/getting_started#APIKey, then append `(setq goo-api-key "you api key")` to your dotemacas.
+
 Usage
 ------------
 
@@ -49,6 +50,7 @@ there are some commands to do url shorten and expand:
 Copyright (C) 2013-2017 Yu Yang
 
 Author: Yu Yang <yyangplus@NOSPAM.gmail.com>
+
 Keywords: url shorten expand
 
 This program is free software; you can redistribute it and/or modify
