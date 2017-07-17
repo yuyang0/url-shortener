@@ -43,3 +43,23 @@ there are some commands to do url shorten and expand:
 * <kbd> M-x dwz-url-expand </kbd>
 * <kbd> M-x 126am-url-shorten </kbd>
 * <kbd> M-x 126am-url-expand </kbd>
+
+## License
+
+Copyright (C) 2013-2017 Yu Yang
+
+Author: Yu Yang <yyangplus@NOSPAM.gmail.com>
+Keywords: url shorten expand
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
